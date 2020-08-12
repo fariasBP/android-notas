@@ -1,0 +1,25 @@
+Creando Fragmentos
+
+para crear fragmentos se debe realizar los siguiente pasos:
+
+
+	- Paso 1:
+		Click derecho en la carpeta "app", del aparatado "proyecto" (donde se navega por los distinto directorios y archivos del proyecto).
+
+	-Paso 2:
+		Se abre una lista de opciones, en esa lista se click en la opcion "New".
+
+	-Paso 3:
+		Se abre otra lista de opciones, en esa lista se click en la opcion "Fragment".
+
+	-Paso 4:
+		Se abre otra lista de opciones, en esa lista se click en la opcion "Fragment(Blank)", esto abrira una ventana modal.
+
+	-Paso 5:
+		Escribir el nombre que se quiere dar al fragmento.
+
+	-Paso 6:
+		Click en el boton "Finish".
+
+
+Y asi se creara "fragment_myname.xml" y "MynameFragment.java" que son los archivos de diseño y logica respectivamente, del Fragmento.

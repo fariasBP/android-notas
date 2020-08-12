@@ -1,0 +1,25 @@
+<!--
+ATRIBUTOS DE LOS HIJOS DE TABLE LAYOUT
+	TEMAS:
+		- TableRow >>> crea una fila en la tabla
+			- layout_column >>> posiciona un view en una columna de del TableRow
+-->
+
+<!--TableRow-->
+	<!--Crea un fila de la table en donde puede tener hijos views-->
+	<TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="boton 1"/>
+    </TableRow>
+
+<!--layout_column-->
+	<!--Define en que columna estara el view en el TAbleRow-->
+	<TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="boton 1"
+            android:layout_column="2"/>
+    </TableRow>

@@ -1,0 +1,80 @@
+
+
+<!-- 1. Crear xml del toolbar (toolbar_view.xml)-->
+
+	<?xml version="1.0" encoding="utf-8"?>
+	<android.support.v7.widget.Toolbar
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:background="@color/colorpink">
+	</android.support.v7.widget.Toolbar>
+
+<!-- 2. Incluir el toolbar en un Layout de actividad-->
+
+	<?xml version="1.0" encoding="utf-8"?>
+	<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:app="http://schemas.android.com/apk/res-auto"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    tools:context=".MainActivity">
+
+	    <include layout="@layout/toolbar_view"
+	        android:id="@+id/toolbar_incluido"></include> <!-- INCLUYENDO EL TOOLBAR-->
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Hello World!"
+	</android.support.constraint.ConstraintLayout>
+
+<!-- 3. Eliminar el toolbar de la actividad -->
+	<!-- sepuede eliminar de dos maneras-->
+		<!-- por androidmanifest.xml o style.xml cambiar el tema a-->
+		<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<!-- por java con la sentencia: -->
+
+<!-- 4. Registrar el nuevo toolbar en [name]Activity.java-->
+	
+	package com.example.franco.fizztest;
+
+	import android.support.v7.app.AppCompatActivity;
+	import android.os.Bundle;
+	import android.support.v7.widget.Toolbar;
+
+
+	public class MainActivity extends AppCompatActivity {
+
+	    private Toolbar mi_toolbarview;
+
+	    protected void onCreate(Bundle savedInstanceState) {
+	        super.onCreate(savedInstanceState);
+	        setContentView(R.layout.activity_main);
+
+	        mi_toolbarview = findViewById(R.id.toolbar_incluido); // OBTENIENDO EL TOOLBAR
+	    }
+	}
+
+<!-- 5. Activar el toolbar como barra de acciones en [name]Activity.java-->
+
+	package com.example.franco.fizztest;
+
+	import android.support.v7.app.AppCompatActivity;
+	import android.os.Bundle;
+	import android.support.v7.widget.Toolbar;
+
+
+	public class MainActivity extends AppCompatActivity {
+
+	    private Toolbar mi_toolbarview;
+
+	    protected void onCreate(Bundle savedInstanceState) {
+	        super.onCreate(savedInstanceState);
+	        setContentView(R.layout.activity_main);
+
+	        mi_toolbarview = findViewById(R.id.toolbar_incluido);
+	        setSupportActionBar(mi_toolbarview); // AGREGAR EL TOOLBAR COMO ACTION BAR
+
+	    }
+	}

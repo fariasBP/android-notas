@@ -1,0 +1,34 @@
+<!--
+ATRIBUTOS SOLO DE RELATIVE LAYOUT
+	TEMAS:
+		- layout_centerHorizontal/Vertical >>> para centrar un view horizontalmente, verticalmente o ambos
+		- layout_above
+		- layout_below
+		- layout_toRightOf/Left/Top/Bootom
+		- layout_alignLeft/Right/Top/Bootom
+
+-->
+
+<!--layout_centerHorizontal, layout_centerVertical-->
+    <!--Centrea el view verticalmente o/y horizontalmente. true para centrar y false para que no centree-->
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"/>
+
+<!--layout_above="<view obj>"-->
+    <!--Posiciona el objeto por encima de otro objeto de referencia-->
+    <Button
+    android:id="@+id/boton1"
+    android:layout_above="@id/boton2"/>
+
+<!--layout_below="<view obj>"-->
+    <!--Posiciona el objeto por debajo de otro objeto de referencia-->
+    <Button
+    android:id="@+id/boton1"
+    android:layout_below="@id/boton2"/>
+
+android:layout_above="@+id/Nombre" Sitúa el elemento por encima del identificado.
+android:layout_toRightOf="@+id/Nombre" Sitúa el elemento a la derecha del identificado.
+android:layout_toLeftOf="@+id/Nombre" Sitúa el elemento a la izquierda del identificado.
+android:layout_alignLeft="@+id/Nombre" Hace que el borde izquierdo del elemento esté alineado con el borde izquerdo del identificado.
+android:layout_alignRight="@+id/Nombre" Hace que el borde derecho del elemento esté alineado con el borde derecho del identificado.

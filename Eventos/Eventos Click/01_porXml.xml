@@ -1,0 +1,10 @@
+<!--
+EVENTOS CLICK
+	TEMAS:
+		-onclick >>> Escucha el evento click y de ser asi llama un metodo
+	FORMA:
+		android:onclick="<met eventoListener>"
+-->
+	<Button
+        android:id="@+id/btn1"
+        android:onClick="miEvento"/>

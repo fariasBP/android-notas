@@ -1,0 +1,40 @@
+/* COLOR DEL TEXTO - textColor
+*/
+
+
+// Por RGB
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+
+        android:textColor="#fff834"/>
+
+// Por Valores de Colores
+	// en el archivo colors.xml
+		<?xml version="1.0" encoding="utf-8"?>
+		<resources>
+		    <color name="colorPrimary">#008577</color>
+		    <color name="colorPrimaryDark">#00574B</color>
+		    <color name="colorAccent">#D81B60</color>
+		</resources>
+	// en el xml
+		<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Hello World!"
+
+	        android:textColor="@color/colorPrimary"/>
+
+//Por Valores de Estilos
+	// en el archivo style.cml
+	<style name="mitexto">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    // en el xml
+    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Hello World!"
+
+	        style="@style/mitexto"/>

@@ -1,0 +1,7 @@
+CREACION DE UN TOOLBAR
+
+Para crear un menu se debe seguir los siguientes pasos:
+
+1-carbiar el tema del app a NoActionBar
+2-crear un layout para nuestro toolbar (parte diseño del toolbar)
+3-registrar el nuevo toolbar en MainActivity

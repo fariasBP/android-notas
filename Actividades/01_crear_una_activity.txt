@@ -1,0 +1,22 @@
+Para crear una activity se debe realizar los siguientes pasos:
+
+	- Paso 1:
+		Click derecho en la carpeta "app", del aparatado "proyecto" (donde se navega por los distinto directorios y archivos del proyecto).
+
+	-Paso 2:
+		Se abre una lista de opciones, en esa lista se click en la opcion "New".
+
+	-Paso 3:
+		Se abre otra lista de opciones, en esa lista se click en la opcion "Activity".
+
+	-Paso 4:
+		Se abre otra lista de opciones, en esa lista se debe escoger el tipo de activity que se desea crear, normalmente se elige "Empty Activity" o se hace click en "Gallery..." para ver una mini previsualizacion de la activity que se quiere crear.
+
+	-Paso 5:
+		Al escoger la activity deseada se abre una ventana en donde se debe escribir el nombre que se quiere dar a la activity.
+
+	-Paso 6:
+		Click en el boton "Finish".
+
+
+Y asi se creara "activity_myname.xml" y "MynameActivity.java" que son los archivos de diseño y logica respectivamente, de la Activity.

@@ -1,0 +1,37 @@
+<!--CREACION DE UN BOTON-->
+<Button/>
+
+<!--ATRIBUTOS-->
+    <!--id-->
+        <!--Identificado del objeto-->
+    
+    <!--text-->
+        <!--Define el contenido o texto del objeto-->
+        <Button 
+            android:text="mi Boton1"/>
+
+    <!--paddingTop, paddingBottom, paddingLeft, paddingRight-->
+        <!--Define el espacion entre el borde y el contenido. Pueden ser de padding de arriba(paddingTop), padding de abajo(paddingBoottom), padding de la izquierda(paddingLeft), padding de la Derecha(paddingRight) o padding de todos los lados (padding)-->
+        <Button
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+        <Button
+            android:padding="10dp"/>
+
+<!--ATRIBUTOS LAYOUT-->
+
+    <!--layout_width layout_height-->
+        <!--Valor numerica Numerica - designa el ancho o alto, apartir de valor dp u otras unidades de medicion-->
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"/>
+        <!--wrap content - designa el ancho o alto, apartir de su contenido-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <!--match_parent - designa el ancho o alto, apartir de valor del elemento padre de este elemento-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>

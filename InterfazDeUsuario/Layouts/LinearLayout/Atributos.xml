@@ -1,0 +1,44 @@
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LInearLayoutC14Activity"
+    android:orientation="vertical">
+</LinearLayout>
+
+<!--orientation=vertica/horizontal-->
+	<!--Define su orientacion que pueden ser verticalmente u horizontalmente-->
+	<LinearLayout
+   		android:orientation="vertical">
+	</LinearLayout>
+
+<!---gravity=rigth/left/top/bootom-->
+	<!--Define hacia dode se posicionara los hijos del LinerLayout-->
+	<LinearLayout
+   		android:gravity="left">
+	</LinearLayout>
+<!--weightSum=""-->
+	<!--Define cuantas columnas(pesos) se daran en el layout, Esto solo sirve cuando los hijos tienen la propiedad layout_weight-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="3">
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button" />
+    </LinearLayout>

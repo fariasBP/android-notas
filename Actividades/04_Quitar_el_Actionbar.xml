@@ -1,0 +1,23 @@
+<!-- QUITAR EL ACTIONBAR
+Hay distintas formas de quitar el actionbar de una activity, pero la mas utilizada
+es modificar el archivo "styles.xml"
+-->
+
+<!-- "STYLES.XML" sin modificar -->
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/red</item>
+        <item name="colorAccent">@color/red</item>
+    </style>
+
+
+<!-- "styles.xml" modificado para que ya no tenga actionbar -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/red</item>
+        <item name="colorAccent">@color/red</item>
+    </style>
+
+<!-- en el ejemplo solo modificamos parent
+-->

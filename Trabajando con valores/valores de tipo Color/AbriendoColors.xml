@@ -1,0 +1,32 @@
+<!--
+ABRIENDO POR PRIMERA VEZ COLORS.XML
+	Es un archivo de recursos de valores para color en donde el principal objetivo es evitar la repeticion de codigo, en este caso de usar colores.
+-->
+<!--
+LOS TRES COLORES POR DEFECTO
+	Hay tres principales colores que estan:
+	- colorPrimary >>> es el color primario de la app, esto se debe style.xml asi lo usa, por ejemplo en el color del actionBar 
+	- colorPrimary >>> es el color primario oscuro. Por ejemplo style.xml lo usa en en la barra de estado del telefono.
+	- colorAccent >> es el color de acento de la app. en conde style.xml lo usa como color segundario para algunos comoponentes de androidstudio. Por ejemplo al crear un EditText este al hacerse foco, cambia al color de acento.
+-->
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+</resources>
+
+<!--
+CREANDO NUESTRO PROPIO RECURSO DE COLOR
+	El recurso de color se debe crear en la etiqueta <color/> y esta debe esta el atributo name que identificara el color.
+	- color >>> etiqueta para crear recurso de color
+		- name >>> nombre para identificar el recurso de color, no debe ser repetido.
+	- resources >>> traducido como recurso, es en donde deben esta las etiqueta de recurso de color.
+	- OBSERVACION: al identificar el color no se debe usar el guion "-".
+-->
+
+<color name="mi_color">#F0F0F0</color>
+
+<!--
+USANDO RECURSOS DE COLORES
+	Para usar el recursos de colores solo se debe incluir en un atributo de escribir "@color/$name_del_color".
+-->

@@ -1,0 +1,5 @@
+<!--Eventos-->
+	<!--onclick="<nombre de la clase del escuchador>"-->
+	<Button
+        android:id="@+id/btn1"
+        android:onClick="miEvento"/>

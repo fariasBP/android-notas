@@ -1,0 +1,10 @@
+<!--textAppearance-->
+	<!--Sirve para dar una apariencia predefinida al texto. En la cual android studio te da sugerencias, en este caso texto grande-->
+	<TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Texto"/>
+<!--textSize-->
+	<!--Para definir el tamano del texto-->
+	<TextView
+        android:textSize="30dp"
+        android:text="Texto"/>

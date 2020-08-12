@@ -1,0 +1,35 @@
+<!-- FRAGMENTOS ESTATICOS
+para incluir el fragmento a una activity se puede realizar de dos maneras, pero dependiedo de la manera en que se incluya el fragmento, esta se considera estatico o dinamico. En este caso incluira directamente por xml, lo que nos dice que el fragmento sera estatico.
+
+Al ser el fragmento estatico no desaparecera o aparacere despues de un evento, si no siempre estara ahi, a eso no referimos con estatico.
+
+TEMAS:
+	- <fragment/> >>> etiqueta de tipo fragmento
+		- android:name >>> atributo de la etiquita "fragment", en donde debe tener como valor el archivo java del fragmento que se quiere incluir.
+		- tools:layout >>> atributo de la etiqueta "fragment", no es obligatorio que tenga este atributo pero si no lo tiene no podras ver los cambios de diseño en android studio pero al correr la app si, en este debe tener el valor del archivo xml del fragmento que se quiere incluir.
+
+-->
+
+<!--INCLUIR UN FRAGMENTODE FORMA ESTATICA EN UNA ACTIVITY
+-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.Proyect.MynameFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_myname" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
